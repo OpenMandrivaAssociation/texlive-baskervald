@@ -1,3 +1,9 @@
+# revision 19490
+# category Package
+# catalog-ctan /fonts/baskervaldadf
+# catalog-date 2010-07-14 23:45:16 +0200
+# catalog-license lppl
+# catalog-version 1.016
 Name:		texlive-baskervald
 Version:	1.016
 Release:	1
@@ -132,6 +138,7 @@ to these features in LaTeX.
 %doc %{_texmfdistdir}/source/fonts/baskervald/ts1-baskervald.etx
 %doc %{_texmfdistdir}/source/fonts/baskervald/ybv-drv.tex
 %doc %{_texmfdistdir}/source/fonts/baskervald/ybv-map.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -142,3 +149,5 @@ to these features in LaTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
