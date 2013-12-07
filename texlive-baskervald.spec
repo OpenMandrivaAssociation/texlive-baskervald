@@ -6,7 +6,7 @@
 # catalog-version 1.016
 Name:		texlive-baskervald
 Version:	1.016
-Release:	5
+Release:	6
 Summary:	Baskervald ADF fonts collection with TeX/LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/baskervaldadf
