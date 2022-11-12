@@ -1,19 +1,13 @@
-# revision 19490
-# category Package
-# catalog-ctan /fonts/baskervaldadf
-# catalog-date 2010-07-14 23:45:16 +0200
-# catalog-license lppl
-# catalog-version 1.016
 Name:		texlive-baskervald
-Version:	1.016
-Release:	11
+Version:	19490
+Release:	1
 Summary:	Baskervald ADF fonts collection with TeX/LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/baskervaldadf
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.r19490.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.doc.r19490.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.source.r19490.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ additional ligatures. The included package files provide access
 to these features in LaTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -131,25 +125,11 @@ to these features in LaTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.016-2
-+ Revision: 749452
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.016-1
-+ Revision: 717886
-- texlive-baskervald
-- texlive-baskervald
-- texlive-baskervald
-- texlive-baskervald
-- texlive-baskervald
-
