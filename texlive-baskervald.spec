@@ -5,9 +5,9 @@ Summary:	Baskervald ADF fonts collection with TeX/LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/baskervaldadf
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.r19490.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.doc.r19490.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.source.r19490.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
