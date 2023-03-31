@@ -1,6 +1,6 @@
 Name:		texlive-baskervald
 Version:	19490
-Release:	1
+Release:	2
 Summary:	Baskervald ADF fonts collection with TeX/LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/baskervaldadf
