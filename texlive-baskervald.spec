@@ -3,7 +3,7 @@ Version:	19490
 Release:	2
 Summary:	Baskervald ADF fonts collection with TeX/LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/baskervaldadf
+URL:		https://www.ctan.org/tex-archive/fonts/baskervaldadf
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/baskervald.doc.r%{version}.tar.xz
